@@ -8,7 +8,6 @@ namespace base_changer
     {
         private static double result;
         private static string result1;
-        private static byte rekt;
         public static string Bin2Dec(string inputfirst)
         {
             try
