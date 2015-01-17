@@ -8,6 +8,7 @@ namespace base_changer
     {
         private static double result;
         private static string result1;
+
         public static string Bin2Dec(string inputfirst)
         {
             try
@@ -30,6 +31,7 @@ namespace base_changer
                 return "Error";
             }
         }
+
         public static string Dec2Bin(string inputfirst)
         {
             try
@@ -104,6 +106,7 @@ namespace base_changer
                 return "Error";
             }
         }
+
         public static string Dec2Oct(string inputfirst)
         {
             try
@@ -125,6 +128,7 @@ namespace base_changer
                 return "Error";
             }
         }
+
         public static string Oct2Dec(string inputfirst)
         {
             try
@@ -145,6 +149,7 @@ namespace base_changer
                 return "Error";
             }
         }
+
         public static string Hex2Dec(string inputfirst)
         {
             try
@@ -154,28 +159,28 @@ namespace base_changer
                 char[] binput = inputfirst.ToCharArray();
                 foreach (char caract in binput)
                 {
-                    string foo = caract.ToString();
-                    if (foo == "A" | foo == "a")
+                    string foo = caract.ToString().ToLower();
+                    if (foo == "a")
                     {
                         bar = 10;
                     }
-                    else if (foo == "B" | foo == "b")
+                    else if (foo == "b")
                     {
                         bar = 11;
                     }
-                    else if (foo == "C" | foo == "c")
+                    else if (foo == "c")
                     {
                         bar = 12;
                     }
-                    else if (foo == "D" | foo == "d")
+                    else if (foo == "d")
                     {
                         bar = 13;
                     }
-                    else if (foo == "E" | foo == "e")
+                    else if (foo == "e")
                     {
                         bar = 14;
                     }
-                    else if (foo == "F" | foo == "f")
+                    else if (foo == "f")
                     {
                         bar = 15;
                     }
